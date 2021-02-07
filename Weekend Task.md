@@ -1,3 +1,4 @@
+```
 #Read file
 import pandas as pd
 path_to_data = 'gapminder.tsv'
@@ -50,3 +51,4 @@ data_iceland_2007['pop']
 #In one step:
 iceland_pop_2007 = data[(data['year']==2007)&(data['country']=='Iceland')]['pop']
 iceland_pop_2007
+```
