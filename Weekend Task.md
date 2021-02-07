@@ -9,7 +9,6 @@ max_gdp = data['gdpPercap'].max()
 max_gdp
 max_gdp_idx = data['gdpPercap'].idxmax()
 max_gdp_idx
-
 data.loc[max_gdp_idx]
 
 idx_asia = data['continent']=='Asia'
@@ -19,12 +18,17 @@ data_asia.iloc[0]
 
 data_frame = data_frame.reset_index(drop=True)
 data_asia
-
+```
+```
 #Exercises
 #All the years in the data, no duplicates
 years = list(set(list(data['year'])))
+```
+```
 #How many unique values are there?
 len(years)
+```
+```
 #What are they?
 years
 #What is the largest pop value?
