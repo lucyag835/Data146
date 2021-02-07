@@ -31,16 +31,24 @@ len(years)
 ```
 #What are they?
 years
+```
+```
 #What is the largest pop value?
 pop_max = data['pop'].max()
 pop_max
+```
+```
 #When and where did this occur
 idx_pop_max = data['pop'].idxmax()
 data.loc[idx_pop_max]['year']
 data.loc[idx_pop_max]['country']
+```
+```
 #Extract records for Europe
 idx_europe = data['continent'] == 'Europe'
 data_europe = data[idx_europe]
+```
+```
 #In 1952, which country had the smallest population?
 idx_europe_1952 = (data['continent']=='Europe') & (data['year']==1952)
 data_europe_1952 = data[idx_europe_1952]
@@ -48,10 +56,14 @@ pop_min = data_europe_1952['pop'].min()
 pop_min
 idx_pop_min = data_europe['pop'].idxmin()
 data.loc[idx_pop_min]['country']
+```
+```
 #What was the population in 2007?
 idx_iceland_2007 = (data['year']==2007) & (data['country']=='Iceland')
 data_iceland_2007 = data[idx_iceland_2007]
 data_iceland_2007['pop']
+```
+```
 #In one step:
 iceland_pop_2007 = data[(data['year']==2007)&(data['country']=='Iceland')]['pop']
 iceland_pop_2007
