@@ -2,7 +2,7 @@
 #Read file
 import pandas as pd
 path_to_data = 'gapminder.tsv'
-(data = pd.read_csv(path_to_data,sep='\t'))
+data = pd.read_csv(path_to_data,sep='\t')
 
 #Largest GDP per capita
 max_gdp = data['gdpPercap'].max()
