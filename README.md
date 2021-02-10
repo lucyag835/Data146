@@ -1,6 +1,6 @@
 # Data146
 # Lucy Greenman
 ## Assignments
-[Feb 8](https://lucyag835.github.io/Data146/GapminderExercise.html)
+[Gapminder](https://lucyag835.github.io/Data146/GapminderExercise.md)
 ## Projects
 [Project 1](...)
