@@ -1,3 +1,4 @@
+Pre-Exercise Warm-Up:
 ```python
 #Read file
 import pandas as pd
@@ -154,9 +155,8 @@ data_asia
 
 
 
-
+Exercises
 ```python
-#Exercises
 #All the years in the data, no duplicates
 years = list(set(list(data['year'])))
 years
