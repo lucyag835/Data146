@@ -1,5 +1,5 @@
-Project 1
-Lucy Greenman
+**Project 1
+**Lucy Greenman
 
 
 ```python
