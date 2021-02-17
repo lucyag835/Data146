@@ -1,17 +1,9 @@
-```python
-# Project 1
-## Lucy Greenman
-### A package
+## Question 1
+First, you need to install the package:
 ```
-
-# What is a library
-## Test
-### Test2
-
-
-```python
-print("test")
+pip install pandas
 ```
-
-    test
-
+Then, you need to import the library to the current workspace:
+```
+import numpy as np
+```
