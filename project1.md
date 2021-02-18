@@ -375,8 +375,7 @@ germanyDif = subset_2007.iloc[0]['gdp'].astype(int) - subset_2002.iloc[0]['gdp']
 franceDif = subset_2007.iloc[1]['gdp'].astype(int) - subset_2002.iloc[1]['gdp'].astype(int)
 italyDif = subset_2007.iloc[2]['gdp'].astype(int) - subset_2002.iloc[2]['gdp'].astype(int)
 spainDif = subset_2007.iloc[3]['gdp'].astype(int) - subset_2002.iloc[3]['gdp'].astype(int)
-max(germanyDif,franceDif,italyDif,spainDif)
-germanyDif
+max(germanyDif,franceDif,italyDif,spainDif) == germanyDif
 ```
 
 
