@@ -169,7 +169,7 @@ temp['year']
 
 
 
-## Conduct a cursory level investigation as to why this was the case and provide a brief explanation in support of your explanation.
+### Conduct a cursory level investigation as to why this was the case and provide a brief explanation in support of your explanation.
 In the 1990s, Rwanda was experiencing a genocide. Tens of thousands of Tutsis, an ethnic minority group, were murdered. This helps to explain the drastically low life expectancy of 23.599 years.
 
 ## Part 5
