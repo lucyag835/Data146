@@ -364,7 +364,7 @@ Italy | 1.66e+12
 Spain | 1.17e+12
 
 ### Stretch goal: which of the four European countries exhibited the most significant increase in total gross domestic product during the previous 5-year period (to 2007)?
-Germany's total gdp grew the most between 2002 and 2007.
+Germany's total GDP grew the most between 2002 and 2007.
 
 
 ```python
@@ -381,7 +381,7 @@ max(germanyDif,franceDif,italyDif,spainDif) == germanyDif
 
 
 
-    177402446824
+    True
 
 
 
