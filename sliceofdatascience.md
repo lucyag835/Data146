@@ -1,0 +1,25 @@
+# Response to Clare Heinbaugh's Slice of Data Science Talk
+## Lucy Greenman
+
+I thoroughly enjoyed Clare's presentation on neural networks, transfer learning, stacked generalization, and keras. Although the material was all brand new to me, Clare did a great job of making it understandable with her sample code and explanations. I feel like I would be well-prepared to try and implement some of these tools myself just from her introduction.
+
+To recap what Clare taught us, she started with a basic overview of neural networks. According to Clare, neural networks are just one type of machine learning model that can be used to classify data. They consist of a hidden layer, an input layer, and an output layer. The classifications that they put out can either be binary (such as indicating whether a person has or does not have diabetes), or they can predict among many possible classifications (such as Clare's example of predicting music genre based on sonic variable inputs from Spotify).
+
+Clare then detailed how a neural network could be constructed from this Spotify data. First, each observation needs to be expanded into a one-dimensional vector. Then weights can be applied, since some variable inputs will be more correlated with some genres; Clare gave the example of acousticness being more correlated with country music. Finally, the weights are updated to improve the predictive power; this is "fitting" the model. While the Spotify data took only about 20 minutes to fit, Clare said that some datasets can take hours or even days. Finally, you want to evaluate how accurate the model is. Clare suggested the train, test, split method, where the model is trained on some number of Spotify artists (Clare suggested 80), then tested on the remaining artists (20). However well the model can predict the genres of those 20 new artists is its accuracy. Clare did warn us that the weighting and updating of weights uses a lot of linear algebra, but she suggested using keras to make the process easy for those who aren't as mathematically inclined.
+
+Next, Clare moved on to talking about images. Something unique about classifying images, she noted, is that the proximity of variable inputs now matters. When our inputs are sonic variable inputs such as acousticness and volume, it doesn't matter whether those values are adjacent to each other or not. However, the location of variable inputs does matter in an image, and linearizing the observations into one-dimensional vectors can cause things to shift around, decreasing the accuracy of predictions. Clare's solution: convolutional neural networks!
+
+Convolutional neural networks, according to Clare, have the ability to "convolve" around the edge of an image, preserving the location and proximity of variable inputs. If your image has a particular relevant quality (e.g. the rounded edge of a tomato), a convolutional neural network can utilize a filter that looks for those specific details, improving accuracy of predictions.
+
+Another way to improve the predictive power of a model is to use the hard work that others have already done. Clare told us about the contest to see who could make the best model using data from Image Net, all of which are now made publicly available by keras. These models vary from each other, and their differences may make them stronger or weaker depending on your desired application. For instance, Clare noted that some of the models are smaller in storage size, making them more ideal for use on in a mobile phone app.
+
+Then Clare walked us through using these transfer learning model in one's own work. To start, she says, you need to remove the classifier. These models were trained to classify thousands of images that might not be relevant to our own purposes, so we don't need to include all that information. The next step is to freeze some of the layers, although the number of layers to be frozen depends on the similarities between your input data and the input data that the model was trained on; we don't want an overfit result. Lastly and perhaps most importantly, we need to add our custom classifier, the actual categories that we want our data sorted into. We can also choose to maintain the weights established in the original model by setting trainable equal to false, which can be a huge time-saver.
+
+Lastly, Clare talked us through stacked generalization. She showed us a blurry image and asked us to guess what it was a photo of. The audience had very different guesses: a dog, a rabbit, and Baby Yoda. While the image turned out to actually be of a dog, Clare explained that a model's strength can improve by accepting different "votes" from several models, then either averaging them, weighting them, or reusing them as inputs. By getting different models' "opinions" on a prediction, that prediction can come out stronger, since the various models might be more attuned to different details or features about the image.
+
+Overall, Clare did a wonderful job making her lecture accessible and useful to even a data science amateur like myself. I really appreciated her talk and I feel like I learned a lot!
+
+
+```python
+
+```
