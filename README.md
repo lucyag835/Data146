@@ -8,6 +8,8 @@
 [Project 2](project2.md)
 
 [Project 3](project3.md)
+
+[Project 5](project5.md)
 ## Other
 [Midterm Corrections](midtermcorrections.md)
 
