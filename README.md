@@ -9,9 +9,9 @@
 
 [Project 3](project3.md)
 
-[Project 5](project5.1.md)
+[Project 5](project5.1.md), Part 1
 
-[Project 5](project5.2.md)
+[Project 5](project5.2.md), Part 2
 ## Other
 [Midterm Corrections](midtermcorrections.md)
 
